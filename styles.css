@@ -40,8 +40,27 @@ h4{
 body{
     font-family: 'Inter', sans-serif;
     color: #1E1E1E;
+    align-items: center;
 }
 
 html{
     background-color: var(--Purple);
+}
+
+nav a {
+    visibility: hidden;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 25px;
+}
+
+table {
+    background-color: #E9BB57;
+}
+
+td {
+    background-color: #ffffff;
+    padding: 10px;
 }
