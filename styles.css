@@ -17,9 +17,11 @@ header {
 header p {
     background-color: #D9526F;
     border-radius: 10px;
-    margin: 0;
+    margin: auto;
     color: #ffffff;
     text-align: center;
+    border-radius: 0px 0px 50px 50px;
+    width: 90%;
 }
 
 h1, h2 {
@@ -35,6 +37,7 @@ h1{
     padding-bottom: 25px;
     text-align: center;
     margin: 0;
+    border-radius: 0px 0px 50px 50px;
 
 }
 
@@ -44,14 +47,17 @@ nav h2{
 
 h2{
     font-size: 2em;
+    padding-left: 20px;
 }
 
 h3{
     font-size: 1.5em;
     color: #E9BB57;
+    padding-left: 20px;
 }
 
 h4{
+    padding-left: 30px;
     font-size: 1.15em;
     color: #484FB7;
 }
@@ -70,21 +76,36 @@ ul li {
     background-color: #E9BB57;
 }
 
+main p {
+    padding: 30px;
+}
+
 [href="#menu"] {
+    font-size: larger;
+    visibility: visible;
     position: fixed;
     top: 0px;
-    right: 30px;
+    right: 0px;
     background-color: #E9BB57;
     padding: 15px;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    text-transform: capitalize;
+}
+
+img {
+    padding: 25px;
 }
 
 article {
     background-color: #ffffff;
     border-radius: 25px;
+    margin: 25px;
 }
 
 #price {
     background-color: #484FB7;
+    padding: 5px;
 }
 
 #ychoose {
@@ -95,10 +116,17 @@ article {
 table {
     background-color: #E9BB57;
     margin: auto;
+    font-size: 1.5em;
+    width: 40%;
+    height: 100%;
 }
 
 td {
     background-color: #ffffff;
+    padding: 10px;
+}
+
+th{
     padding: 10px;
 }
 
