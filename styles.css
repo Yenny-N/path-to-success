@@ -11,17 +11,19 @@
 }
 
 header small {
+    position: relative;
     display: block;
     background-color: #D9526F;
     margin: auto;
     margin-bottom: 10px;
     color: #ffffff;
     text-align: center;
-    border-radius: 0px 0px 40px 40px;
-    width: 90%;
+    border-radius: 0px 0px 50px 50px;
+    width: 95%;
     padding: 10px;
-    padding-top: 20px;
+    padding-top: 180px;
     z-index: -1;
+    font-weight: bold;
 }
 
 h1, h2 {
@@ -29,37 +31,40 @@ h1, h2 {
     color: #ffffff;
 }
 
-h1{
+h1 {
     font-size: 3em;
+    position: absolute;
+    top: 0;
     background-color: #6B8FE7;
-    padding-bottom: 25px;
+    padding-bottom: 50px;
+    padding-top: 50px ;
     text-align: center;
     margin: 0;
     border-radius: 0px 0px 50px 50px;
     width: 100%;
     letter-spacing: 3px;
-}
-
-nav h2{
-    font-size: 1.5em;
+    z-index: 2;
 }
 
 h2{
     font-size: 2em;
-    padding-left: 60px;
+    padding-left: 20px;
     padding-top: 20px;
+    margin-bottom: 5px;
 }
 
 h3{
     font-size: 1.5em;
     color: #E9BB57;
-    padding-left: 60px;
+    padding-left: 20px;
+    margin-bottom: 0;
 }
 
 h4{
-    padding-left: 30px;
+    padding-left: 25px;
     font-size: 1.15em;
     color: #484FB7;
+    font-weight: bold;
 }
 
 body{
@@ -77,14 +82,26 @@ html{
 }
 
 nav {
-    padding: 0;
-    margin: 0;
+    position: fixed; 
+    top: 0px;
+    right: 0px;
+    padding: 10px 20px 0px 20px;
+    margin: 0px;
+    z-index: 1000;
+    background-color: #E9BB57;
+    border-radius: 0px 0px 20px 20px;
+    text-transform: uppercase;
+    font-size: 1em;
 }
+
+nav h2{
+    font-size: 1.5em;
+}
+
 
 ul li {
     display: none;
     list-style: none;
-    background-color: #E9BB57;
 }
 
 nav a{
@@ -93,22 +110,14 @@ nav a{
 }
 
 main p {
-    padding: 30px;
+    padding: 25px;
+    padding-top: 0px;
+    line-height: 25px;
 }
 
 [href="#menu"] {
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    background-color: #E9BB57;
-    padding: 15px;
-    margin: auto;
-    border-radius: 0px 0px 25px 25px;
-    list-style: none;
-    font-size: 2em;
-    text-transform: uppercase;
+    margin: auto;   
     font-weight: bold;
-    text-decoration: none;
 }
 
 img {
@@ -119,8 +128,8 @@ article {
     background-color: #ffffff;
     border-radius: 25px;
     margin: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 #price {
@@ -136,14 +145,14 @@ article {
 }
 
 #whychoose div {
-    width: 250px;
-    height: 90px;
-    padding: 50px;
-    margin: 10px;
+    width: 125px;
+    height: 40px;
+    padding: 30px;
+    margin: 2px;
     border-radius: 20px;
     text-align: center;
-    font-size: 2.2em;
-    font-weight: bold;
+    font-size: 1em;
+    font-weight: 900;
 }
 
 #green {
@@ -173,7 +182,9 @@ article {
 table {
     background-color: #E9BB57;
     margin: auto;
-    width: 400px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 230px;
     height: auto;
 }
 
@@ -193,10 +204,14 @@ footer {
     background-color: #6B8FE7;
     text-align: center;
     color: #ffffff;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     border-radius: 0px 0px 50px 50px;
     width: 100%;
+}
+
+footer a {
+    text-decoration: underline;
 }
 
 .first {
@@ -225,11 +240,15 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
-    padding: 40px 190px 40px 190px;
+    padding: 30px 100px 30px 100px;
     border-radius: 20px;
     box-shadow: 10px 10px 5px #1E1E1E;
 }
 
 .potential {
     display: none;
+}
+
+@media screen {min-width: 450px;
+
 }
