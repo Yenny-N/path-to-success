@@ -10,18 +10,16 @@
 --White:#ffffff; 
 }
 
-header {
-    top: 0;
-}
-
 header p {
     background-color: #D9526F;
-    border-radius: 10px;
     margin: auto;
+    margin-bottom: 10px;
     color: #ffffff;
     text-align: center;
-    border-radius: 0px 0px 50px 50px;
-    width: 90%;
+    border-radius: 0px 0px 40px 40px;
+    width: 93%;
+    padding: 10px;
+    padding-top: 20px;
 }
 
 h1, h2 {
@@ -32,13 +30,12 @@ h1, h2 {
 h1{
     font-size: 3em;
     background-color: #6B8FE7;
-    padding: 25px;
-    padding-left: 40px;
+    padding-top: 70px;
     padding-bottom: 25px;
     text-align: center;
     margin: 0;
-    border-radius: 0px 0px 50px 50px;
-
+    border-radius: 0px 0px 40px 40px;
+    width: 100%;
 }
 
 nav h2{
@@ -48,6 +45,7 @@ nav h2{
 h2{
     font-size: 2em;
     padding-left: 20px;
+    padding-top: 20px;
 }
 
 h3{
@@ -65,15 +63,26 @@ h4{
 body{
     font-family: 'Inter', sans-serif;
     color: #1E1E1E;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 120px;
 }
 
 html{
     background-color: var(--Purple);
+    margin: 0;
+    padding: 0;
 }
 
 ul li {
-    visibility: hidden;
+    display: none;
+    list-style: none;
     background-color: #E9BB57;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1E1E1E;
 }
 
 main p {
@@ -87,9 +96,12 @@ main p {
     background-color: #E9BB57;
     padding: 15px;
     margin: auto;
-    border-radius: 0px 0px 15px 15px;
-    text-transform: capitalize;
+    border-radius: 0px 0px 25px 25px;
     list-style: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 img {
@@ -110,7 +122,6 @@ article {
 #ychoose {
     border-radius: 0;
     background-color: #D9526F;
-    padding-top: 20px;
     padding-bottom: 20px;
     width: 100%;  
 }
@@ -173,9 +184,32 @@ footer {
     background-color: #6B8FE7;
     text-align: center;
     color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-radius: 0px 0px 50px 50px;
+    width: 100%;
 }
 
 .first {
+    text-align: center;
     background-color: #D9526F;
+    color: #ffffff;
+    padding-bottom: 90px;
 }
 
+.first p{
+    text-align: left;
+    padding: 20px;
+}
+
+.first a{
+    background-color: #ffffff;
+    text-decoration: none;
+    margin: 10px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.potential {
+    display: none;
+}
