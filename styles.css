@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap);
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
 
 :root {
 --Teal :#4CA7C0;
@@ -124,6 +124,7 @@ main p {
 }
 
 img {
+    scale: 110%;
     padding: 25px;
 }
 
@@ -265,6 +266,10 @@ footer a {
         visibility: visible;
     }
 
+    body {
+        width: fit-content;
+    }
+
     header small {
         font-weight: normal;
     }
@@ -311,17 +316,24 @@ footer a {
     }
 
     #whychoose div {
-        scale: 110%;
         margin-top: 15px;
         margin-bottom: 0px;
-        margin: 10px;
+        margin: 5px;
     }
 
-    #green, #yellow {
+    #whychoose #green{
         width: 30%;
     }
 
-    #purple, #white {
+    #whychoose #purple{
+        width: 20%;
+    }
+
+    #whychoose #yellow{
+        width: 30%;
+    }
+
+    #whychoose #white{
         width: 20%;
     }
     
@@ -352,12 +364,13 @@ footer a {
         padding-bottom: 0px;
     }
 
-    .fisrt h2 {
+    .first h2 {
         grid-column: 1 / span 2;
     }
 
     .first a {
         margin: auto;
+        margin-right: 20px;
         position: relative;
         bottom: -50px;
     }
