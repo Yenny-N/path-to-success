@@ -112,15 +112,15 @@ nav a{
     color: #1E1E1E;
 }
 
+[href="#menu"] {
+    margin: auto;   
+    font-weight: bold;
+}
+
 main p {
     padding: 25px;
     padding-top: 0px;
     line-height: 25px;
-}
-
-[href="#menu"] {
-    margin: auto;   
-    font-weight: bold;
 }
 
 img {
@@ -274,38 +274,26 @@ footer a {
         font-weight: normal;
     }
 
-    #personal-development {
-        width: 50%;
-        margin-right: 15px;
-        margin-bottom: 0px;
-    }
-
-    #career-coaching {
-        width: 50%;
-        margin-left: 15px;
-        margin-bottom: 0px;
-    }
-
     #o-o {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }    
+
+    #o-o h3 {
+        grid-column: 1 / span 2;
     }
 
-    #supportive-community {
-        width: 50%;
-        margin-right: 15px;
-        margin: 20px;
-    }
-
-    #focused-session {
-        width: 50%;
-        margin-left: 15px;
-        margin: 20px;
+    #relationship-coaching {
+        grid-column: 1 / span 2;
     }
 
     #g-c {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #g-c h3 {
+        grid-column: 1 / span 2;
     }
 
     #whychoose {
@@ -378,6 +366,66 @@ footer a {
 
 @media screen and (min-width: 950px) {
 
+    [href="#menu"] {
+        display: none;
+    }
+
+    ul li {
+        display: inline;
+        font-weight: bold;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+
+    nav {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #services h3 {
+        display: flex;
+        width: fit-content;
+        white-space: nowrap;
+        font-size: 1.3em;
+        padding: 0px;
+    }
+
+    #o-o {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #career-coaching {
+        margin-left: 20px;
+    }
+
+    #g-c {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #w-s{
+        width: 25%;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    #o-c {
+        width: 25%;
+        display: flex;
+        flex-direction: column;     
+        align-items: center; 
+    }
+
+    #services {
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 1280px) {
