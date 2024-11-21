@@ -75,7 +75,7 @@ body{
     color: #1E1E1E;
     padding: 0;
     margin: 0;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
 }
 
 html{
@@ -366,6 +366,10 @@ footer a {
 
 @media screen and (min-width: 950px) {
 
+    h1 {
+        width: 1450px;
+    }
+
     [href="#menu"] {
         display: none;
     }
@@ -426,8 +430,52 @@ footer a {
     #services {
         display: flex;
     }
+
+    #whychoose #green {
+        width: 25%;
+    }
+
+    #whychoose #purple {
+        width: 25%;
+    }
+
+    #whychoose #yellow {
+        width: 25%;
+    }
+
+    #whychoose #white {
+        width: 25%;
+    }
+
+    #price {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+
+    .first a {
+        position: relative;
+        bottom: -50px;
+        margin-right: 100px;
+    }
+
+    .first {
+        padding: 10px;
+    }
+
+    .first p {
+        width: 55%;
+        margin-left: -30px;
+    }
+
+    #foot {
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
 
 @media screen and (min-width: 1280px) {
 
+    body {
+        padding: 0px 150px;
+    }
 }
