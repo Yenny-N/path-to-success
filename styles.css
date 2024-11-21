@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap');
-
+/*---CSS by Yen Nguyen----*/
+/*---Imported fonts----*/
+@import url(https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kavoon&display=swap);
+/*---Root variable----*/
 :root {
 --Teal :#4CA7C0;
 --Purple: #484FB7;
@@ -10,6 +12,7 @@
 --White:#ffffff; 
 }
 
+/*---CSS rest----*/
 header small {
     position: relative;
     display: block;
@@ -124,7 +127,6 @@ main p {
 }
 
 img {
-    scale: 110%;
     padding: 25px;
 }
 
@@ -146,6 +148,10 @@ article {
     background-color: #D9526F;
     padding-bottom: 20px;
     width: 100%;  
+}
+
+#whychoose h2 {
+    display: none;
 }
 
 #whychoose div {
@@ -250,7 +256,7 @@ footer a {
 }
 
 
-
+/*---Global Styles (small)----*/
 @media screen and (min-width: 450px) {
 
     .potential {
@@ -259,6 +265,7 @@ footer a {
 
 }
 
+/*---Media Query (medium)----*/
 @media screen and (min-width: 620px) {
 
     .potential {
@@ -364,6 +371,7 @@ footer a {
     }
 }
 
+/*---Media Query (large)----*/
 @media screen and (min-width: 950px) {
 
     h1 {
@@ -473,6 +481,7 @@ footer a {
     }
 }
 
+/*---Media Query (xl)----*/
 @media screen and (min-width: 1280px) {
 
     body {
